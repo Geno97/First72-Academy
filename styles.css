@@ -69,12 +69,17 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.05;letter-s
   backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
-.brand{display:flex;align-items:center;gap:11px;font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:-.01em}
-.brand .mark{
-  background:var(--vermilion);color:#fff;font-family:var(--display);font-weight:800;
-  padding:7px 9px;border-radius:8px;font-size:15px;letter-spacing:.02em;line-height:1;
-}
-.brand small{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.22em;color:var(--steel);font-weight:700;margin-top:2px}
+.brand{display:flex;align-items:baseline;gap:7px;font-family:var(--display);font-weight:800;font-size:23px;letter-spacing:.01em;color:var(--ink);text-transform:uppercase}
+.brand .reg{font-size:11px;font-weight:700;vertical-align:super;color:var(--ink)}
+.brand .sub{font-family:var(--mono);font-size:10px;letter-spacing:.26em;color:var(--steel);font-weight:700;text-transform:uppercase;align-self:center}
+.brand--light{color:#fff}
+.brand--light .reg{color:#fff}
+/* contact bar above nav, like the real site */
+.topbar{background:var(--ink);color:rgba(255,255,255,.82)}
+.topbar .wrap{display:flex;justify-content:flex-end;gap:24px;align-items:center;height:38px;font-size:13px;font-family:var(--body)}
+.topbar a{color:rgba(255,255,255,.82);display:inline-flex;align-items:center;gap:6px}
+.topbar a:hover{color:var(--vermilion)}
+@media(max-width:680px){.topbar .wrap{justify-content:center;gap:16px;font-size:12px}}
 .nav-links{display:flex;align-items:center;gap:30px}
 .nav-links a{font-weight:600;font-size:15px;color:var(--ink-soft);transition:color .15s}
 .nav-links a:hover,.nav-links a.active{color:var(--vermilion)}
@@ -261,3 +266,38 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.05;letter-s
   .cta-strip{flex-direction:column;align-items:flex-start}
   .section{padding:60px 0}
 }
+
+/* ============================================================
+   ADDED: themes mirrored from first72.org.nz
+   ============================================================ */
+
+/* Trusted-by logo strip */
+.trusted{background:var(--paper);border-bottom:1px solid var(--line);padding:44px 0 38px}
+.trusted .eyebrow{text-align:center;display:block;margin-bottom:20px}
+.trusted-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:38px}
+.trusted-row .org{font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.02em;
+  color:var(--steel);opacity:.85;white-space:nowrap;text-transform:uppercase}
+@media(max-width:680px){.trusted-row{gap:20px}.trusted-row .org{font-size:13px}}
+
+/* Reassurance band */
+.reassure{background:var(--sand);text-align:center}
+.reassure h2{font-size:clamp(26px,3.6vw,40px);max-width:760px;margin:0 auto 14px}
+.reassure p{font-size:18px;color:var(--ink-soft);max-width:620px;margin:0 auto 26px}
+
+/* Who-we-prepare chips */
+.prepare-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}
+.prep-chip{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px 18px;
+  display:flex;flex-direction:column;gap:6px;transition:transform .16s,box-shadow .16s,border-color .16s}
+.prep-chip:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);border-color:var(--vermilion)}
+.prep-chip .pn{font-family:var(--mono);font-size:11px;color:var(--vermilion);letter-spacing:.12em;font-weight:700}
+.prep-chip h4{font-size:16px;text-transform:uppercase;letter-spacing:.01em}
+@media(max-width:900px){.prepare-grid{grid-template-columns:1fr 1fr}}
+
+/* Testimonials */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.quote{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.quote .stars{color:var(--vermilion);font-size:15px;letter-spacing:2px;margin-bottom:12px}
+.quote p{font-size:15px;color:var(--ink-soft);line-height:1.6;margin-bottom:18px}
+.quote .who{font-family:var(--display);font-weight:700;font-size:15px}
+.quote .role{font-size:13px;color:var(--steel)}
+@media(max-width:900px){.quotes{grid-template-columns:1fr}}
