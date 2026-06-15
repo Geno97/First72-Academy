@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My learning — First 72 Training</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="mark">F72</span><span>FIRST72<small>TRAINING</small></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="courses.html">Courses</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="index.html" class="btn btn-ghost">Log out</a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button></div>
+  </div>
+</header>
+
+<div class="dash">
+  <aside class="dash-side">
+    <div class="u">
+      <div class="av">G</div>
+      <div><strong style="color:#fff;font-size:14px">Gene</strong><small>Demo learner</small></div>
+    </div>
+    <nav>
+      <a class="active" href="dashboard.html"><span>▦</span> My learning</a>
+      <a href="courses.html"><span>▤</span> Browse courses</a>
+      <a href="#"><span>✓</span> Certificates</a>
+      <a href="#"><span>⚙</span> Settings</a>
+    </nav>
+    <div style="margin-top:30px;padding:16px;background:rgba(255,255,255,.06);border-radius:10px">
+      <div style="font-family:var(--mono);font-size:11px;color:var(--vermilion);letter-spacing:.1em;margin-bottom:6px">DEMO MODE</div>
+      <p style="font-size:12.5px;color:rgba(255,255,255,.6);line-height:1.5">This is a preview of the learner experience. Progress isn't really saved.</p>
+    </div>
+  </aside>
+
+  <main class="dash-main">
+    <h1>Kia ora, Gene 👋</h1>
+    <p class="sub">You're 62% of the way through your current training. Keep going.</p>
+
+    <div class="dash-stats">
+      <div class="dstat"><div class="n">3</div><div class="l">Courses enrolled</div></div>
+      <div class="dstat"><div class="n">1</div><div class="l">Completed</div></div>
+      <div class="dstat"><div class="n">1</div><div class="l">Certificate earned</div></div>
+      <div class="dstat"><div class="n">62%</div><div class="l">Avg. progress</div></div>
+    </div>
+
+    <span class="eyebrow">Continue learning</span>
+    <div style="margin-top:14px"></div>
+
+    <div class="dcourse">
+      <div class="ic"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="16" height="12" rx="1"/><path d="M7 6V3h8v3"/></svg></div>
+      <div class="info">
+        <h3>Workplace Emergency Preparedness</h3>
+        <p>Module 4 of 8 · Communications when the network drops</p>
+        <div class="bar"><i style="width:50%"></i></div>
+      </div>
+      <a href="course.html" class="btn btn-primary">Resume</a>
+    </div>
+
+    <div class="dcourse">
+      <div class="ic"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10 12 3l9 7"/><path d="M5 9v11h14V9"/></svg></div>
+      <div class="info">
+        <h3>Build Your Household Grab Bag</h3>
+        <p>Module 2 of 5 · What to pack and why</p>
+        <div class="bar"><i style="width:40%"></i></div>
+      </div>
+      <a href="course.html" class="btn btn-primary">Resume</a>
+    </div>
+
+    <div class="dcourse">
+      <div class="ic" style="background:#E3F0EA;color:var(--ok)"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <div class="info">
+        <h3>Psychological First Aid</h3>
+        <p>Completed · Certificate earned</p>
+        <div class="bar"><i style="width:100%;background:var(--ok)"></i></div>
+      </div>
+      <a href="#" class="btn btn-ghost">Certificate</a>
+    </div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

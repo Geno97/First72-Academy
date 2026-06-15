@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — First 72 Training</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="mark">F72</span><span>FIRST72<small>TRAINING</small></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="courses.html">Courses</a>
+      <a href="about.html">About</a><a href="contact.html" class="active">Contact</a><a href="login.html">Log in</a>
+    </nav>
+    <div class="nav-cta"><a href="courses.html" class="btn btn-primary">Browse courses</a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button></div>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Let's get you ready.</h1>
+    <p>Training a team, a council or a community group? Tell us what you need and we'll point you to the right courses.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start">
+    <div>
+      <span class="eyebrow">Why reach out</span>
+      <h2 style="font-size:28px;margin:14px 0 18px">We'll tailor it to you</h2>
+      <p style="color:var(--steel);margin-bottom:24px">Whether you want a single course or to roll training out across a whole organisation, we'll help you choose the right path — including per-seat pricing and team tracking for businesses.</p>
+      <div style="font-family:var(--mono);font-size:14px;color:var(--ink-soft);line-height:2.2">
+        ✉ &nbsp;hello@first72training.com<br>
+        ◷ &nbsp;Mon–Fri, 9am–5pm<br>
+        ⚲ &nbsp;Aotearoa New Zealand
+      </div>
+    </div>
+
+    <div class="form-card" style="max-width:none">
+      <form id="contactForm" onsubmit="return demoContact(event)">
+        <div class="field"><label>Your name</label><input type="text" required placeholder="Jane Smith"></div>
+        <div class="field"><label>Email</label><input type="email" required placeholder="jane@company.co.nz"></div>
+        <div class="field"><label>I'm enquiring as a…</label>
+          <select><option>Individual</option><option>Business / workplace</option><option>Council / community group</option></select></div>
+        <div class="field"><label>How can we help?</label><textarea rows="4" placeholder="Tell us about your team or what you'd like to learn…"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send message</button>
+      </form>
+      <div id="contactDone" style="display:none;text-align:center;padding:20px 0">
+        <div style="font-size:40px;margin-bottom:10px">✓</div>
+        <h3 style="margin-bottom:8px">Message sent</h3>
+        <p style="color:var(--steel)">Thanks — we'll be in touch shortly. <br><em>(Demo only: nothing was actually sent.)</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand"><a class="brand" href="index.html" style="color:#fff"><span class="mark">F72</span><span style="color:#fff">FIRST72<small>TRAINING</small></span></a><p>Practical emergency-preparedness training that leaves people ready to act in the first 72 hours and beyond.</p></div>
+      <div><h5>Explore</h5><a href="courses.html">All courses</a><a href="about.html">About us</a><a href="contact.html">Contact</a></div>
+      <div><h5>Learn</h5><a href="courses.html">For individuals</a><a href="courses.html">For business</a><a href="courses.html">For communities</a></div>
+      <div><h5>Account</h5><a href="login.html">Log in</a><a href="login.html">Demo dashboard</a></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 First 72 Training</span><span>BE READY · FIRST 72 HOURS</span></div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

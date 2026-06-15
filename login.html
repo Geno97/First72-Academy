@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Log in — First 72 Training</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="mark">F72</span><span>FIRST72<small>TRAINING</small></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="courses.html">Courses</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html" class="active">Log in</a>
+    </nav>
+    <div class="nav-cta"><a href="courses.html" class="btn btn-primary">Browse courses</a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button></div>
+  </div>
+</header>
+
+<div class="auth">
+  <div class="auth-side">
+    <span class="eyebrow">Welcome back</span>
+    <h2>Pick up where you left off.</h2>
+    <p>Log in to continue your training, track your progress and download your certificates.</p>
+    <div class="tl-mini">
+      <div><span class="hr">00</span><span style="color:rgba(255,255,255,.8)">Your courses, all in one place</span></div>
+      <div><span class="hr">24</span><span style="color:rgba(255,255,255,.8)">Progress saved automatically</span></div>
+      <div><span class="hr">48</span><span style="color:rgba(255,255,255,.8)">Certificates ready to download</span></div>
+      <div><span class="hr">72</span><span style="color:rgba(255,255,255,.8)">Ready to act when it counts</span></div>
+    </div>
+  </div>
+
+  <div class="auth-main">
+    <div class="form-card">
+      <span class="eyebrow">Log in</span>
+      <h2 style="font-size:28px;margin:10px 0 18px">Your training account</h2>
+      <div class="demo-hint">DEMO MODE — no real account needed. Just press “Log in” to see the learner dashboard.</div>
+      <form onsubmit="return demoLogin(event)">
+        <div class="field"><label>Email</label><input type="email" placeholder="you@example.com"></div>
+        <div class="field"><label>Password</label><input type="password" placeholder="••••••••"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Log in →</button>
+      </form>
+      <p style="text-align:center;margin-top:18px;font-size:14px;color:var(--steel)">New here? <a href="courses.html" style="color:var(--vermilion);font-weight:600">Browse courses</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
