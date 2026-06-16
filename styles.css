@@ -358,3 +358,18 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.05;letter-s
 .recap ul li::before{background:#2E9E5B}
 .example-box{background:var(--sand);border-radius:10px;padding:16px 20px;margin:16px 0;font-size:14.5px;color:var(--ink-soft)}
 .example-box strong{color:var(--ink);font-family:var(--display)}
+
+/* ============================================================
+   SHOP BAND (home page)
+   ============================================================ */
+.shop-band{background:var(--ink);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1.15fr 1fr;align-items:stretch}
+.shop-band .shop-copy{padding:48px 44px;color:#fff;display:flex;flex-direction:column;justify-content:center}
+.shop-band .eyebrow{color:var(--vermilion)}
+.shop-band h2{font-size:clamp(26px,3.4vw,38px);text-transform:uppercase;line-height:1.05;margin:12px 0 14px}
+.shop-band p{color:#C7CDC9;font-size:16px;margin-bottom:14px;max-width:440px}
+.shop-band .prod-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.shop-band .prod-list span{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:#9FB0B6;border:1px solid #33474F;border-radius:100px;padding:6px 13px}
+.shop-band .shop-visual{background:linear-gradient(150deg,var(--vermilion),var(--vermilion-deep));position:relative;display:flex;align-items:center;justify-content:center;min-height:280px}
+.shop-band .shop-visual svg{width:120px;height:120px;opacity:.92}
+.shop-band .shop-visual .vtag{position:absolute;bottom:22px;left:22px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:rgba(255,255,255,.9);text-transform:uppercase}
+@media(max-width:760px){.shop-band{grid-template-columns:1fr}.shop-band .shop-copy{padding:34px 28px}.shop-band .shop-visual{min-height:180px}}
