@@ -110,7 +110,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.05;letter-s
   border:1px solid rgba(255,255,255,.12);display:flex;align-items:flex-end;padding:24px;
   position:relative;
 }
-.hero-photo .badge{background:var(--vermilion);color:#fff;font-family:var(--mono);font-size:11px;
+.hero-photo .badge{position:absolute;left:24px;bottom:24px;z-index:2;background:var(--vermilion);color:#fff;font-family:var(--mono);font-size:11px;
   letter-spacing:.1em;padding:7px 12px;border-radius:100px;font-weight:700}
 .hero-photo .glyph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.14}
 .hero-photo .glyph svg{width:60%;height:60%}
@@ -143,6 +143,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.05;letter-s
 .course .top{height:128px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;
   background:linear-gradient(150deg,var(--ink),var(--ink-soft));color:#fff}
 .course .top.alt{background:linear-gradient(150deg,var(--vermilion),var(--vermilion-deep))}
+.course .top.has-photo{background-size:cover;background-position:center}
 .course .top .tag{align-self:flex-start;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;
   background:rgba(255,255,255,.18);padding:5px 10px;border-radius:100px;font-weight:700}
 .course .top .lvl{font-family:var(--mono);font-size:12px;opacity:.85}
