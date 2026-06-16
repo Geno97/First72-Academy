@@ -337,3 +337,24 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.05;letter-s
 .activity-box{border:2px dashed var(--vermilion);border-radius:12px;padding:20px 24px;margin:22px 0;background:#FFF6F2}
 .activity-box .alabel{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--vermilion);font-weight:700;margin-bottom:10px}
 .activity-box h4{margin-top:0}
+
+/* ============================================================
+   DEEP COURSE STRUCTURE (3-day modules, video slots)
+   ============================================================ */
+.day-intro{background:var(--ink);color:#fff;border-radius:12px;padding:22px 26px;margin-bottom:24px}
+.day-intro .dtag{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--vermilion);font-weight:700}
+.day-intro h4{color:#fff;font-size:20px;margin:8px 0 8px;font-family:var(--display)}
+.day-intro p{color:#C7CDC9;font-size:15px;margin:0}
+.day-intro .meta{margin-top:14px;display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:#9FB0B6}
+.video-slot{border:2px dashed var(--steel);border-radius:12px;background:#EEF1F0;padding:34px 24px;margin:24px 0;text-align:center}
+.video-slot .vic{width:54px;height:54px;border-radius:50%;background:var(--vermilion);display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.video-slot .vic svg{width:22px;height:22px;fill:#fff;margin-left:3px}
+.video-slot .vlabel{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--steel);font-weight:700;margin-bottom:6px}
+.video-slot p{font-size:14px;color:var(--steel);margin:0;max-width:440px;margin-left:auto;margin-right:auto}
+.lesson-body h4.section-h{font-size:18px;margin:30px 0 12px;padding-top:22px;border-top:1px solid var(--line)}
+.lesson-body h4.section-h:first-of-type{border-top:none;padding-top:0}
+.recap{background:#E9F2EE;border-radius:12px;padding:20px 24px;margin:26px 0 6px}
+.recap .rlabel{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#1F7A52;font-weight:700;margin-bottom:10px}
+.recap ul li::before{background:#2E9E5B}
+.example-box{background:var(--sand);border-radius:10px;padding:16px 20px;margin:16px 0;font-size:14.5px;color:var(--ink-soft)}
+.example-box strong{color:var(--ink);font-family:var(--display)}
