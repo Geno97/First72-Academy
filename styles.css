@@ -302,3 +302,38 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.05;letter-s
 .quote .who{font-family:var(--display);font-weight:700;font-size:15px}
 .quote .role{font-size:13px;color:var(--steel)}
 @media(max-width:900px){.quotes{grid-template-columns:1fr}}
+
+/* ============================================================
+   LESSON / COURSE CONTENT STYLES
+   ============================================================ */
+.lesson-module{border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);margin-bottom:22px;overflow:hidden}
+.lesson-module > summary{list-style:none;cursor:pointer;padding:22px 26px;display:flex;align-items:center;gap:16px;
+  background:var(--paper);transition:background .15s}
+.lesson-module > summary::-webkit-details-marker{display:none}
+.lesson-module > summary:hover{background:var(--sand)}
+.lesson-module[open] > summary{border-bottom:1px solid var(--line)}
+.lesson-module .mnum{font-family:var(--mono);font-weight:700;font-size:15px;color:#fff;background:var(--vermilion);
+  width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.lesson-module .mhead{flex:1}
+.lesson-module .mhead h3{font-size:19px;margin-bottom:3px}
+.lesson-module .mhead p{font-size:13.5px;color:var(--steel)}
+.lesson-module .chev{color:var(--steel);font-size:13px;font-family:var(--mono);flex-shrink:0}
+.lesson-body{padding:8px 26px 28px}
+.lesson-body h4{font-size:16px;color:var(--ink);margin:22px 0 10px;font-family:var(--display);font-weight:700}
+.lesson-body p{font-size:15.5px;color:var(--ink-soft);margin-bottom:14px;line-height:1.7}
+.lesson-body ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.lesson-body ul li{position:relative;padding-left:26px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft);line-height:1.6}
+.lesson-body ul li::before{content:"";position:absolute;left:4px;top:9px;width:7px;height:7px;border-radius:2px;background:var(--vermilion)}
+.key-callout{background:var(--ink);color:#fff;border-radius:12px;padding:18px 22px;margin:20px 0;font-weight:600;font-size:16px;display:flex;gap:12px;align-items:center}
+.key-callout::before{content:"★";color:var(--vermilion);font-size:20px}
+.quiz{background:var(--sand);border-radius:12px;padding:20px 24px;margin:22px 0}
+.quiz .qlabel{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--vermilion);font-weight:700;margin-bottom:14px}
+.quiz .q{font-weight:600;color:var(--ink);margin:16px 0 9px;font-size:15.5px}
+.quiz .opt{display:block;padding:9px 14px;border:1px solid var(--line);border-radius:8px;margin-bottom:7px;cursor:pointer;font-size:14.5px;background:#fff;transition:all .12s}
+.quiz .opt:hover{border-color:var(--vermilion)}
+.quiz .opt.correct{border-color:#2E9E5B;background:#EAF7EF}
+.quiz details{margin-top:6px}
+.quiz summary{cursor:pointer;font-size:13.5px;color:var(--vermilion);font-weight:600}
+.activity-box{border:2px dashed var(--vermilion);border-radius:12px;padding:20px 24px;margin:22px 0;background:#FFF6F2}
+.activity-box .alabel{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--vermilion);font-weight:700;margin-bottom:10px}
+.activity-box h4{margin-top:0}
